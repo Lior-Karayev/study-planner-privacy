@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>Study Planner Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --text: #1f2328;
+        --muted: #59636e;
+        --bg: #ffffff;
+        --line: #d1d9e0;
+        --link: #0550ae;
+        --mark-bg: #fff1b8;
+        --mark-text: #3d2e00;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #e6edf3;
+          --muted: #9da7b3;
+          --bg: #14181d;
+          --line: #3d444d;
+          --link: #79b8ff;
+          --mark-bg: #5c4700;
+          --mark-text: #fff1b8;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 16px;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          1rem/1.6 system-ui,
+          -apple-system,
+          "Segoe UI",
+          Arial,
+          "Noto Sans Hebrew",
+          sans-serif;
+      }
+      main,
+      nav,
+      .draft {
+        max-width: 44rem;
+        margin-inline: auto;
+      }
+      nav {
+        display: flex;
+        gap: 1.5rem;
+        padding-block: 0.5rem;
+      }
+      a {
+        color: var(--link);
+        overflow-wrap: anywhere;
+      }
+      a:focus-visible {
+        outline: 3px solid var(--link);
+        outline-offset: 2px;
+      }
+      nav a {
+        display: inline-block;
+        padding-block: 0.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin-block: 1rem 0.25rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin-block: 2rem 0.5rem;
+      }
+      li {
+        margin-block: 0.4rem;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .table-wrap {
+        overflow-x: auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 0.5rem;
+        text-align: start;
+        vertical-align: top;
+        min-width: 8rem;
+      }
+      mark,
+      .draft {
+        background: var(--mark-bg);
+        color: var(--mark-text);
+      }
+      mark {
+        padding-inline: 0.2em;
+      }
+      .draft {
+        padding: 0.75rem 1rem;
+        border-radius: 6px;
+      }
+      section[lang="he"] {
+        border-top: 2px solid var(--line);
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav aria-label="Language / שפה">
+      <a href="#en" hreflang="en">English</a>
+      <a href="#he" hreflang="he" lang="he" dir="rtl">עברית</a>
+    </nav>
+    <main>
+      <section id="en" lang="en" dir="ltr">
+        <h1>Study Planner — Moodle: Privacy Policy</h1>
+        <p class="muted">
+          Published by
+          Study Planner (independently operated by Lior Karayev). Effective
+          1 November 2026.
+        </p>
+
+        <h2>In short</h2>
+        <p>
+          Study Planner is a browser extension that reads course information from the Moodle page
+          you have open, when you ask it to. It has no server and doesn't send data over the network
+          by itself. Course information leaves your browser only if you copy, download or paste it
+          somewhere. The publisher receives something only if you choose to send a problem report.
+        </p>
+
+        <h2>What the extension reads</h2>
+        <p>
+          It reads a page only after you click Scan or explicitly start an automated run, and only
+          on the Moodle page or pages involved. From those pages it takes:
+        </p>
+        <ul>
+          <li>the page's address, without its query, and the time of the scan;</li>
+          <li>
+            on a course page: the course title, id, link and format; section numbers and titles, and whether each is collapsed or loaded; and activity names, ids, types, links and displayed dates;
+          </li>
+          <li>on My courses or the Dashboard: course names, ids, links and visible categories;</li>
+          <li>the titles of entries it rejected, and why, so you can see what was left out.</li>
+        </ul>
+        <p>
+          It isn't designed to take activity descriptions, section summaries, grades, submissions,
+          completion or restriction information, passwords or session tokens. It also counts what it
+          sees on the page, to warn you when something may be missing. Titles are written by people,
+          so a title could itself contain personal information, and the extension can't rule that
+          out.
+        </p>
+        <p>
+          In an automated run, the extension opens the main page of each course you selected, in
+          your own tab. Moodle may log those visits as if you had opened the pages yourself.
+        </p>
+
+        <h2>What it keeps, and where</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Where</th>
+                <th scope="col">How long</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Scan results and collections, your selections and corrections, and your edited
+                  prompts
+                </td>
+                <td>The browser's session storage, in memory</td>
+                <td>
+                  Until the browser closes, the extension is reloaded or updated, or you clear them
+                </td>
+              </tr>
+              <tr>
+                <td>A technical marker of which collection record is current, with no course data</td>
+                <td>IndexedDB on your device</td>
+                <td>Until the extension is removed</td>
+              </tr>
+              <tr>
+                <td>
+                  A log of what the checks noticed: fixed codes, app version, language, scan type, layout labels, rounded counts, dates and repeat counts. It has no course names, links or
+                  page text
+                </td>
+                <td>The browser's local storage, on your device</td>
+                <td>
+                  Until you clear it on the Report a problem page. An entry not seen for about 30 days is no longer shown or reported, and is deleted the next time you scan or the extension
+                  records something
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The extension doesn't use Chrome sync and doesn't run in incognito windows.</p>
+
+        <h2>What can leave your browser</h2>
+        <p>Only through something you do:</p>
+        <ul>
+          <li>
+            <strong>Copy or Download.</strong> You get your selected data, including course names and
+            links. A downloaded file stays on your device until you delete it, and anything you paste
+            or upload is handled under the terms of wherever you put it, such as an AI service.
+          </li>
+          <li>
+            <strong>AI website links.</strong> These are ordinary links and carry no course data.
+            Opening one is a normal visit to that website.
+          </li>
+          <li>
+            <strong>Problem reports.</strong> See below.
+          </li>
+        </ul>
+
+        <h2>Problem reports</h2>
+        <p>
+          You see the whole report before you do anything with it. It contains a random report id,
+          the app and check versions, your browser's major version, the interface language, the
+          category you chose, the logged codes described above, and your own description if you
+          wrote one. It contains no course names, links or page content, unless you type them into
+          your description, so please don't.
+        </p>
+        <p>
+          You can copy or download the report, or open an email draft addressed to
+          <a href="mailto:studyplanner.support@gmail.com">studyplanner.support@gmail.com</a>. The
+          extension doesn't send it: nothing is sent unless you send it yourself from your own email
+          account. A long report isn't placed in the draft, and you paste it in yourself.
+        </p>
+        <p>
+          If you email a report, the recipient receives your email address, your display name if
+          your account has one, the message and its usual email details. Your email provider and
+          Google, which runs the Gmail mailbox, process the message under their own terms.
+        </p>
+        <ul>
+          <li>
+            <strong>Who reads reports and why:</strong>
+            Reports are reviewed by the project's operator solely to investigate and fix reported problems.
+          </li>
+          <li>
+            <strong>How long they're kept:</strong>
+            Received reports are kept for up to 90 days after receipt, then deleted from the support mailbox, Trash, and any retained copies.
+          </li>
+          <li>
+            <strong>Asking for deletion:</strong>
+            To request deletion, email studyplanner.support@gmail.com from the address used to send the report. We will process your request within 30 days, subject to any legal retention requirement.
+          </li>
+        </ul>
+
+        <h2>What the extension doesn't do</h2>
+        <p>
+          It has no usage analytics, tracking, advertising or background transmission, and it runs no
+          remote code. It doesn't send your data to the publisher or to anyone else by itself.
+        </p>
+        <p>
+          The operator does not sell received reports or share them with third parties other than the email service provider or where required by law.
+        </p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li>
+            Clear results or a collection in the extension at any time. It's gone from the extension
+            at once. If the browser fails to remove part of it, that part stays unused in session
+            memory until the browser closes.
+          </li>
+          <li>Clear the log on the Report a problem page.</li>
+          <li>
+            Removing the extension removes the data it stores in the browser. It can't remove files
+            you downloaded, text you pasted elsewhere or emails you sent.
+          </li>
+        </ul>
+
+        <h2>Chrome Web Store Limited Use</h2>
+        <p>
+          The use of information received by this extension will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>Changes are posted on this page with a new effective date.</p>
+
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:studyplanner.support@gmail.com">studyplanner.support@gmail.com</a>
+        </p>
+        <p class="muted">
+          Moodle is a trademark of Moodle Pty Ltd. This extension isn't affiliated with Moodle.
+        </p>
+      </section>
+
+      <section id="he" lang="he" dir="rtl">
+        <h1>Study Planner — Moodle: מדיניות פרטיות</h1>
+        <p class="muted">
+          מפרסם: Study Planner (פרויקט עצמאי בהפעלת ליאור קראייב). בתוקף מיום 1 בנובמבר 2026.
+        </p>
+
+        <h2>בקצרה</h2>
+        <p>
+          Study Planner הוא תוסף דפדפן שקורא מידע על קורסים מדף ה-Moodle הפתוח אצלכם, כשאתם מבקשים
+          זאת. אין לו שרת, והוא לא שולח מידע ברשת מעצמו. מידע על קורסים יוצא מהדפדפן רק אם אתם מעתיקים,
+          מורידים או מדביקים אותו במקום אחר. המפרסם מקבל מידע רק אם תבחרו לשלוח דיווח על בעיה.
+        </p>
+
+        <h2>מה התוסף קורא</h2>
+        <p>
+          התוסף קורא דף רק אחרי שלחצתם על סריקה או התחלתם במפורש ריצה אוטומטית, ורק בדפי ה-Moodle
+          הנוגעים לכך. מהדפים האלה הוא לוקח:
+        </p>
+        <ul>
+          <li>את כתובת הדף, ללא הפרמטרים שלה, ואת זמן הסריקה;</li>
+          <li>
+            בדף קורס: את שם הקורס, המזהה, הקישור והפורמט שלו; מספרי יחידות וכותרותיהן, והאם כל יחידה מכווצת או נטענה; ושמות, מזהים, סוגים, קישורים ותאריכים מוצגים של פעילויות;
+          </li>
+          <li>בדף הקורסים שלי או בלוח הבקרה: שמות קורסים, מזהים, קישורים וקטגוריות גלויות;</li>
+          <li>את כותרות הרשומות שנדחו ואת הסיבה לכך, כדי שתוכלו לראות מה לא נכלל.</li>
+        </ul>
+        <p>
+          התוסף לא נועד לקחת תיאורי פעילויות, תקצירי יחידות, ציונים, הגשות, מידע על השלמה או הגבלות,
+          סיסמאות או אסימוני התחברות. הוא גם סופר את מה שהוא רואה בדף, כדי להזהיר אתכם כשייתכן שמשהו
+          חסר. כותרות נכתבות בידי אנשים, ולכן כותרת עלולה להכיל מידע אישי, והתוסף לא יכול לשלול זאת.
+        </p>
+        <p>
+          בריצה אוטומטית התוסף פותח, בכרטיסייה שלכם, את הדף הראשי של כל קורס שבחרתם. ייתכן ש-Moodle
+          ירשום את הביקורים האלה כאילו פתחתם את הדפים בעצמכם.
+        </p>
+
+        <h2>מה נשמר, ואיפה</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">מידע</th>
+                <th scope="col">איפה</th>
+                <th scope="col">לכמה זמן</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>תוצאות סריקה ואוספים, הבחירות והתיקונים שלכם וההנחיות שערכתם</td>
+                <td>אחסון ההפעלה של הדפדפן, בזיכרון</td>
+                <td>עד לסגירת הדפדפן, לטעינה מחדש או לעדכון של התוסף, או עד שתמחקו אותם</td>
+              </tr>
+              <tr>
+                <td>סימון טכני של רשומת האוסף הנוכחית, ללא מידע על קורסים</td>
+                <td>IndexedDB במכשיר שלכם</td>
+                <td>עד להסרת התוסף</td>
+              </tr>
+              <tr>
+                <td>
+                  יומן של מה שהבדיקות הבחינו בו: קודים קבועים, גרסת התוסף, שפה, סוג הסריקה, תוויות פריסה, ספירות
+                  מעוגלות, תאריכים ומספר חזרות. אין בו שמות קורסים, קישורים או טקסט מהדף
+                </td>
+                <td>האחסון המקומי של הדפדפן, במכשיר שלכם</td>
+                <td>
+                  עד שתמחקו אותו בדף דיווח על בעיה. רשומה שלא נראתה כ-30 יום כבר לא מוצגת ולא מדווחת,
+                  והיא נמחקת בפעם הבאה שתסרקו או שהתוסף ירשום משהו
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>התוסף אינו משתמש בסנכרון של Chrome ואינו פועל בחלונות גלישה בסתר.</p>
+
+        <h2>מה יכול לצאת מהדפדפן</h2>
+        <p>רק באמצעות פעולה שלכם:</p>
+        <ul>
+          <li>
+            <strong>העתקה או הורדה.</strong> אתם מקבלים את המידע שבחרתם, כולל שמות קורסים וקישורים.
+            קובץ שהורד נשאר במכשיר עד שתמחקו אותו, ומה שתדביקו או תעלו כפוף לתנאים של המקום שאליו העברתם
+            אותו, למשל שירות בינה מלאכותית.
+          </li>
+          <li>
+            <strong>קישורים לאתרי בינה מלאכותית.</strong> אלה קישורים רגילים שאינם נושאים מידע על
+            קורסים. פתיחת קישור היא ביקור רגיל באתר.
+          </li>
+          <li>
+            <strong>דיווחים על בעיות.</strong> ראו בהמשך.
+          </li>
+        </ul>
+
+        <h2>דיווחים על בעיות</h2>
+        <p>
+          אתם רואים את הדיווח כולו לפני שאתם עושים בו משהו. הוא כולל מזהה דיווח אקראי, את גרסאות התוסף
+          והבדיקות, את הגרסה הראשית של הדפדפן, את שפת הממשק, את הקטגוריה שבחרתם, את הקודים ביומן
+          שתואר למעלה, ואת התיאור שלכם אם כתבתם. אין בו שמות קורסים, קישורים או תוכן מהדף, אלא אם
+          תקלידו אותם בתיאור, ולכן נא לא לעשות זאת.
+        </p>
+        <p>
+          אפשר להעתיק או להוריד את הדיווח, או לפתוח טיוטת דוא״ל אל
+          <a href="mailto:studyplanner.support@gmail.com" dir="ltr">studyplanner.support@gmail.com</a>.
+          התוסף לא שולח אותו: שום דבר לא נשלח אלא אם תשלחו בעצמכם מחשבון הדוא״ל שלכם. דיווח ארוך לא
+          נכנס לטיוטה, ותצטרכו להדביק אותו בעצמכם.
+        </p>
+        <p>
+          אם תשלחו דיווח בדוא״ל, הנמען יקבל את כתובת הדוא״ל שלכם, את השם המוצג אם יש כזה בחשבון, את
+          ההודעה ואת פרטי הדוא״ל הרגילים. ספק הדוא״ל שלכם ו-Google, שמפעילה את תיבת Gmail, מעבדים את
+          ההודעה לפי התנאים שלהם.
+        </p>
+        <ul>
+          <li>
+            <strong>מי קורא דיווחים ולשם מה:</strong>
+            מפעיל הפרויקט בלבד קורא את הדיווחים, ורק לצורך בירור תקלות ותיקונן.
+          </li>
+          <li>
+            <strong>כמה זמן הם נשמרים:</strong>
+            דיווחים שהתקבלו נשמרים עד 90 יום ממועד קבלתם, ולאחר מכן נמחקים מתיבת התמיכה, מהאשפה ומכל עותק שנשמר.
+          </li>
+          <li>
+            <strong>בקשת מחיקה:</strong>
+            אפשר לבקש מחיקה בכתובת studyplanner.support@gmail.com, מתוך כתובת הדוא״ל שממנה נשלח הדיווח. נטפל בבקשה בתוך 30 יום, בכפוף לחובת שמירה על פי דין.
+          </li>
+        </ul>
+
+        <h2>מה התוסף לא עושה</h2>
+        <p>
+          אין בו ניתוח נתוני שימוש, מעקב, פרסום או שידור ברקע, והוא לא מריץ קוד מרוחק. הוא לא שולח מעצמו את
+          המידע שלכם למפרסם או לאף גורם אחר.
+        </p>
+        <p>
+          מפעיל הפרויקט אינו מוכר דיווחים שקיבל ואינו משתף אותם עם צדדים שלישיים, למעט ספק שירות הדוא״ל או כאשר החוק מחייב זאת.
+        </p>
+
+        <h2>הבחירות שלכם</h2>
+        <ul>
+          <li>
+            אפשר למחוק תוצאות או אוסף בתוסף בכל עת. הם נעלמים מהתוסף מיד. אם הדפדפן לא מצליח להסיר חלק
+            מהם, אותו חלק נשאר ללא שימוש בזיכרון ההפעלה עד לסגירת הדפדפן.
+          </li>
+          <li>אפשר למחוק את היומן בדף דיווח על בעיה.</li>
+          <li>
+            הסרת התוסף מסירה את המידע שהוא שומר בדפדפן. היא לא יכולה להסיר קבצים שהורדתם, טקסט שהדבקתם
+            במקום אחר או הודעות דוא״ל ששלחתם.
+          </li>
+        </ul>
+
+        <h2>Limited Use של חנות האינטרנט של Chrome</h2>
+        <p>
+          השימוש במידע שהתוסף מקבל יהיה בהתאם למדיניות נתוני המשתמש של חנות האינטרנט של Chrome, לרבות דרישות Limited Use.
+        </p>
+
+        <h2>שינויים במדיניות</h2>
+        <p>שינויים יפורסמו בדף זה עם תאריך תוקף חדש.</p>
+
+        <h2>יצירת קשר</h2>
+        <p>
+          <a href="mailto:studyplanner.support@gmail.com" dir="ltr">studyplanner.support@gmail.com</a>
+        </p>
+        <p class="muted">Moodle הוא סימן מסחרי של Moodle Pty Ltd. התוסף אינו קשור ל-Moodle.</p>
+      </section>
+    </main>
+  </body>
+</html>
